@@ -1,9 +1,9 @@
-from  flask  importar  Flask
-aplicação  =  Frasco ( __name__ )
+from flask import Flask
+application = Flask(__name__)
 
-@ aplicativo . rota ( "/" )
-def  olá ():
-    return  "<h1> Hola FIAP! </h1> \ n MBA! o /"
+@application.route("/")
+def hello():
+    return "<h1>Hola FIAP!</h1>\nMBA! o/"
 
-if  __name__  ==  '__main__' :
-    aplicação . run ()
+if __name__ == '__main__':
+    application.run()
